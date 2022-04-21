@@ -1,5 +1,7 @@
 package com.projeto.ecad.entity;
 
+import java.util.Objects;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -66,6 +68,23 @@ public class DadosEntity {
 
 	public void setArquivos(String arquivos) {
 		this.arquivos = arquivos;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(idDado);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		DadosEntity other = (DadosEntity) obj;
+		return Objects.equals(idDado, other.idDado);
 	}
 	
 	
