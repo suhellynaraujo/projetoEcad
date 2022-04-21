@@ -16,6 +16,9 @@ public class DadosEntity {
 	private String dataFinal;
 	private String arquivos;
 	
+	public DadosEntity() {
+		
+	}
 	
 	
 	
