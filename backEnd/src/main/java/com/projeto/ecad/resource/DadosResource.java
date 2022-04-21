@@ -1,5 +1,34 @@
 package com.projeto.ecad.resource;
 
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.projeto.ecad.entity.DadosEntity;
+import com.projeto.ecad.service.DadosService;
+
+@RestController
+@RequestMapping(value = "/dados")
 public class DadosResource {
+	
+	@Autowired
+	public DadosService dadosService;
+	
+	@GetMapping
+	public List<DadosEntity> findAll(){
+		return dadosService.findAll();
+	}
+	
+	@PostMapping(value = "/salvar")
+	public ResponseEntity<DadosEntity> save(@RequestBody DadosEntity dados){
+		dadosService.save(dados);
+		return ResponseEntity.ok().body(dados);
+	}
 
 }

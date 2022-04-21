@@ -23,4 +23,14 @@ public class DadosService {
 		
 	}
 
+	public void save(DadosEntity dados) {
+		try {
+			dadosRepository.save(dados);
+		}catch (Exception e) {
+			throw e;
+		}
+	}
+
+	
+	
 }
