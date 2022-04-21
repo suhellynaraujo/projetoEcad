@@ -19,6 +19,14 @@ public class DadosEntity {
 	public DadosEntity() {
 		
 	}
+
+	public DadosEntity(Long idDado, String nome, String dataInicial, String dataFinal, String arquivos) {
+		this.idDado = idDado;
+		this.nome = nome;
+		this.dataInicial = dataInicial;
+		this.dataFinal = dataFinal;
+		this.arquivos = arquivos;
+	}
 	
 	
 	
