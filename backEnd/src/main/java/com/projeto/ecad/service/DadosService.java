@@ -30,6 +30,14 @@ public class DadosService {
 			throw e;
 		}
 	}
+	
+	public void update(DadosEntity dado) {
+		try {
+			dadosRepository.save(dado);
+		} catch (Exception e) {
+			throw e;
+		}
+	}
 
 	
 	
