@@ -40,8 +40,8 @@ public class DadosService {
 		}
 	}
 
-	public void delete(Long idDados) {
-		Optional<DadosEntity> dados =  dadosRepository.findById(idDados);
+	public void delete(Long idDado) {
+		Optional<DadosEntity> dados =  dadosRepository.findById(idDado);
 		if(dados.isPresent()) {
 			dadosRepository.delete(dados.get());
 			System.out.println(dados.get().getNome());
@@ -51,8 +51,8 @@ public class DadosService {
 		
 	}
 
-	public DadosEntity getById(Long idDados) {
-		Optional<DadosEntity> dados = dadosRepository.findById(idDados);
+	public DadosEntity getById(Long idDado) {
+		Optional<DadosEntity> dados = dadosRepository.findById(idDado);
 		if(dados.isPresent()) {
 			return dados.get();
 		}else {

@@ -41,9 +41,9 @@ public class DadosResource {
 		}
 
 	@DeleteMapping(value = "/{idDados}")
-	public ResponseEntity<DadosEntity> delete(@PathVariable Long idDados){
-		dadosService.delete(idDados);
-		DadosEntity dados = dadosService.getById(idDados);
+	public ResponseEntity<DadosEntity> delete(@PathVariable Long idDado){
+		dadosService.delete(idDado);
+		DadosEntity dados = dadosService.getById(idDado);
 		return ResponseEntity.ok().body(dados);
 		
 	}
