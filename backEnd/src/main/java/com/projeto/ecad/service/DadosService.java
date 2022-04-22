@@ -2,6 +2,7 @@ package com.projeto.ecad.service;
 
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -38,6 +39,27 @@ public class DadosService {
 			throw e;
 		}
 	}
+
+	public void delete(Long idDados) {
+		Optional<DadosEntity> dados =  dadosRepository.findById(idDados);
+		if(dados.isPresent()) {
+			dadosRepository.delete(dados.get());
+			System.out.println(dados.get().getNome());
+		}else {
+			System.out.println("Não há arquivos!");
+		}
+		
+	}
+
+	public DadosEntity getById(Long idDados) {
+		Optional<DadosEntity> dados = dadosRepository.findById(idDados);
+		if(dados.isPresent()) {
+			return dados.get();
+		}else {
+		
+		return null;
+	}
+		}
 
 	
 	
