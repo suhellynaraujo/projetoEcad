@@ -9,20 +9,20 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "Dados")
+@Table( name = "dados")
 public class DadosEntity {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long idDado;
 	
-	private String banco; 
-	private String nome;
-	private String dataInicial;
-	private String dataFinal;
 	private String arquivos;
-	private String tipo;
+	private String banco; 
+	private String dataFinal;
+	private String dataInicial;
 	private int linhas;
+	private String nome;
+	private String tipo;
 	private String total;
 	
 	
@@ -30,20 +30,18 @@ public class DadosEntity {
 		
 	}
 
-	public DadosEntity(Long idDado, String banco, String nome, String dataInicial, String dataFinal, String arquivos,
-			String tipo, int linhas, String total) {
+	public DadosEntity(Long idDado, String arquivos, String banco, String dataFinal, String dataInicial, int linhas,
+			String nome, String tipo, String total) {
 		this.idDado = idDado;
-		this.banco = banco;
-		this.nome = nome;
-		this.dataInicial = dataInicial;
-		this.dataFinal = dataFinal;
 		this.arquivos = arquivos;
-		this.tipo = tipo;
+		this.banco = banco;
+		this.dataFinal = dataFinal;
+		this.dataInicial = dataInicial;
 		this.linhas = linhas;
+		this.nome = nome;
+		this.tipo = tipo;
 		this.total = total;
 	}
-
-
 
 	public Long getIdDado() {
 		return idDado;
