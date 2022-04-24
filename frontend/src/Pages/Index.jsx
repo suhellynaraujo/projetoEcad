@@ -1,6 +1,8 @@
+import React from "react";
+
 export default function Index() {
   return (
-    <>
+    <>    
       <main ClassName="principal">
         <div ClassName="divSperior">
           <div ClassName="filtroDePesquisa">
