@@ -1,8 +1,8 @@
-
+import "../filtodepesquisa/filtro.css"
 export default function Filtro(){
     return(
         <>
-           <div ClassName="divSperior">
+        <div ClassName="divSuperior">
           <div ClassName="filtroDePesquisa">
             <h5>Filtro de Pesquisa</h5>
           </div>
