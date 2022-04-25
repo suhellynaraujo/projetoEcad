@@ -10,8 +10,13 @@
     height: 30px;
     display: flex;
     align-items: center;
-
 }
+
+.filtroDePesquisa h5{
+    font-size: 14px;
+    margin-top: 10px;   
+}
+
 .lupa{
     height: 15px;
     margin: 4px;
@@ -29,7 +34,6 @@
 .formularioDados input, select{
     border: 2px solid rgba(128, 128, 128, 0.322);
     border-radius: 5px;
-    padding: 5px;
     width: 150px;
     margin: 10px;
    
