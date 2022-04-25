@@ -25,3 +25,16 @@
     margin: 5px;
     
 }
+@media (max-width: 750px){
+    tr{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    td{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    
+}

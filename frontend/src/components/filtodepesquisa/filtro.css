@@ -88,3 +88,26 @@
    
    
 }
+
+
+@media (max-width: 750px){
+   
+.divData{   
+    height: 90px;
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: center;   
+}
+
+.center{
+    display: flex;    
+    height: 70px;
+    margin-left: 5%;
+   
+  }
+
+#name{
+    width: 200px;
+}
+
+}
