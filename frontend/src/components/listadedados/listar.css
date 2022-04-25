@@ -1,0 +1,27 @@
+.divInferior{
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid rgba(128, 128, 128, 0.322);
+    align-items: center;
+    margin-top: 10px;
+}
+
+.title{
+    background-color: rgba(22, 108, 189, 0.623);
+    height: 30px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.colunas{
+   background-color:  rgba(128, 128, 128, 0.322);
+   color:rgba(22, 108, 189, 0.623);
+}
+
+.tabela{
+    margin: 5px;
+    
+}
