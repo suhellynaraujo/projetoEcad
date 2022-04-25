@@ -6,7 +6,7 @@ import '../Pages/indexpages.css'
 export default function Index() {
   return (
     <>    
-      <main ClassName="principal">
+      <main className="principal">
       <Filtro/>
        <Listar/>
       </main>

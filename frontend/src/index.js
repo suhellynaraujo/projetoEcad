@@ -1,7 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import Index from './Pages/Index';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import '../src/components/filtodepesquisa/filtro.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
