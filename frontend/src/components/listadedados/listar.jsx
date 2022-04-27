@@ -36,7 +36,7 @@ export default function Listar() {
             </tr>
           </thead>
           {dados.map((dados) => (
-            <tbody>
+            <tbody key={dados.idDado}>
               <tr className="tds">
                 <td>{dados.banco}</td>
                 <td>{dados.tipo}</td>
